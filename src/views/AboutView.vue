@@ -1,8 +1,20 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <BlogSection />
   </div>
 </template>
+
+<script>
+import BlogSection from '../components/blogsection.vue';
+
+export default {
+  name: 'App',
+  components: {
+    BlogSection,
+  },
+};
+</script>
 
 <style>
 @media (min-width: 1024px) {
