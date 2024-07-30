@@ -1,7 +1,7 @@
 <template>
   <div class="blog-section">
     Hello
-    hello
+    gianna
     <div v-html="renderedContent"></div>
   </div>
 </template>
