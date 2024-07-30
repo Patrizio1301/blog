@@ -1,11 +1,13 @@
 <template>
   <div class="blog-section">
     Hello
+    hello
     <div v-html="renderedContent"></div>
   </div>
 </template>
 
 <script>
+import { marked } from "marked";
 
 export default {
   name: 'BlogSection',
