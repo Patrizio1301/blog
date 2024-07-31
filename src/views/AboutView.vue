@@ -132,7 +132,7 @@
             <h5 class="header">Empirical risk error</h5>
             <p>Since the learner does not know what D and f are, the true error is not directly available to the learner. A useful notion of error that can be calculated by the learner is the training error – the error the classifier incurs over the training sample</p>
             <pre>L_S(h) = | { i ∈ [m]: h(x_i) ≠ y_i } | / m</pre>
-            <div v-katex:display="'L_S(h)=\\frac{| i\\in[m]: h(x_i)\\neq y_i|}{m})'"></div
+            <div v-katex:display="'L_S(h)=\\frac{| i\\in[m]: h(x_i)\\neq y_i|}{m})'"></div>
             <p>where <strong>m := |S|</strong>. The terms empirical error and empirical risk are often used interchangeably for this error.</p>
           </div>
 
