@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     hello
+    <textarea v-model="latex" style="width: 300px; height: 200px"></textarea>
     <h1>This is an about page</h1>
     <BlogSection />
   </div>
@@ -14,6 +15,11 @@ export default {
   components: {
     BlogSection,
   },
+  data() {
+    return {
+      latex: "$\\frac{2}{3}$ abc $\\\\$ 你好 $\\frac{33}{444}$",
+    };
+  },
 };
 </script>
 
@@ -24,5 +30,10 @@ export default {
     display: flex;
     align-items: center;
   }
+}
+
+.latex {
+  font-size: 20px;
+  color: blueviolet;
 }
 </style>
