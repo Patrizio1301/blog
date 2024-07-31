@@ -1,8 +1,7 @@
 <template>
   <div class="about">
     hello
-    <div v-katex="latex" class="latex"></div>
-    <textarea v-model="latex" style="width: 300px; height: 200px"></textarea>
+    <div v-katex:display="'\\frac{a_i}{1+x}'"></div>
     <h1>This is an about page</h1>
     <BlogSection />
   </div>
@@ -15,11 +14,6 @@ export default {
   name: 'App',
   components: {
     BlogSection,
-  },
-  data() {
-    return {
-      latex: "$\\frac{2}{3}$ abc $\\\\$ 你好 $\\frac{33}{444}$",
-    };
   },
 };
 </script>

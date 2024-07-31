@@ -1,6 +1,7 @@
 import './assets/main.css'
 
-import katexvue3 from "katex-vue3";
+import {VueKatex} from 'vue-katex';
+import 'katex/dist/katex.min.css';
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -9,17 +10,12 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App) .use(katexvue3, {
-    flag: [
-      { left: "$", right: "$" },
-      { left: "$$", right: "$$" }
-    ],
-    options: {
-      displayMode: false, // 是否显示为公式模式
-      throwOnError: false, //设置为true时，将在控制台抛出错误，而不是输出错误信息
-      errorColor: "#FF0000" // 错误信息的颜色
+const app = createApp(App).use(VueKatex, {
+    mhchem: true,
+    globalOptions: {
+    //... Define globally applied KaTeX options here
     }
-  })
+  });
 
 app.use(createPinia())
 app.use(router)
