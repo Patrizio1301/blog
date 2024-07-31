@@ -2,7 +2,9 @@
   <div class="about">
     hello
     <div v-katex:display="'\\frac{a_i}{1+x}'"></div>
+    <img src="./assets/first-picture.png">
     <h1>This is an about page</h1>
+    <img src="./assets/second.png">
     <BlogSection />
   </div>
 </template>
