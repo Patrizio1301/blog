@@ -2,9 +2,11 @@
   <div class="about">
     hello
     <div v-katex:display="'\\frac{a_i}{1+x}'"></div>
-    <img src="../assets/first_picture.png">
-    <h1>This is an about page</h1>
-    <img src="../assets/second.png">
+
+    <div class="images-container">
+      <img src="../assets/first_picture.png">
+      <img src="../assets/second.png">
+    </div>
     <BlogSection />
   </div>
 </template>
@@ -32,5 +34,17 @@ export default {
 .latex {
   font-size: 20px;
   color: blueviolet;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-container img {
+  max-width: 100%;  /* Adjust this value as needed */
+  height: auto;
+  margin-bottom: 10px; /* Add some spacing between the images if needed */
 }
 </style>
