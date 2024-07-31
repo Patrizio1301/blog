@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     hello
+    <div v-katex="latex" class="latex"></div>
     <textarea v-model="latex" style="width: 300px; height: 200px"></textarea>
     <h1>This is an about page</h1>
     <BlogSection />
