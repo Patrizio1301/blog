@@ -6,9 +6,9 @@ defineProps<{
 </script>
 
 <template>
+  <h1 class="white">{{ msg }}</h1>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3 class="green">{{ msg2 }}</h3>
+    <h3 class="white">{{ msg2 }}</h3>
     <h3>
       Welcome to my website!
     </h3>
@@ -19,7 +19,6 @@ defineProps<{
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
-  position: relative;
   top: -10px;
 }
 
@@ -30,6 +29,7 @@ h3 {
 .greetings h1,
 .greetings h3 {
   text-align: center;
+  color: white;
 }
 
 @media (min-width: 1024px) {

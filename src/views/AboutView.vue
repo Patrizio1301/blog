@@ -2,6 +2,7 @@
   <div class="about">
     <section id="machine-learning-fundamentals">
       <h1 class="header">Machine Learning Fundamentals</h1>
+      <q-btn label="My Button" />
 
       <!-- Definitions Section -->
       <div>
@@ -164,11 +165,22 @@ export default {
 <style>
 @media (min-width: 1024px) {
   .about {
+    color: black;
+    font-family: "Roboto", sans-serif;
     margin-top: 50px;
     min-height: 100vh;
     display: flex;
     align-items: center;
   }
+}
+
+.about {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .latex {
