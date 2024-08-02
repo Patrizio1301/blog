@@ -1,7 +1,7 @@
 <template>
   <div class="blog-list q-pa-md">
     <div class="card-grid">
-      <q-card v-for="post in posts" :key="post.id" class="my-card">
+      <q-card v-for="post in posts" :key="post.id" class="my-card" @click="navigateToArticle(post.id)">
         <q-img :src="post.image" style="height: 30vh">
           <div class="absolute-bottom text-h6">{{ post.title }}</div>
         </q-img>
@@ -67,6 +67,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    navigateToArticle(id) {
+      this.$router.push({ name: 'ArticlePage', params: { id } });
+    }
   }
 };
 </script>

@@ -3,21 +3,17 @@
     <q-header class="bg-white text-grey-8" height-hint="64">
       <q-toolbar class="GPL__toolbar" style="height: 64px; font-family: Bebas Neue, sans-serif">
 
-        <q-toolbar-title shrink class="row items-center no-wrap">
-          <span class="q-ml-sm" style="font-size: 30px">Patrizio Guagliardo</span>
-        </q-toolbar-title>
 
-
-        <div v-if="$q.screen.gt.sm" style="margin-left: 200px; font-size: 30px">
+        <div v-if="$q.screen.gt.sm" style="margin-left: 0px; font-size: 50px">
 
         <q-btn
       flat
       dense
       no-wrap
-      color="primary"
+      color="black"
       no-caps
       label="Home"
-      size="50"
+      size="20px"
       class="q-ml-sm q-px-md"
       v-if="$q.screen.gt.sm"
       @click="navigateTo('home')"
@@ -26,8 +22,9 @@
       flat
       dense
       no-wrap
-      color="primary"
+      color="black"
       no-caps
+      size="20px"
       label="About"
       class="q-ml-sm q-px-md"
       v-if="$q.screen.gt.sm"
@@ -37,8 +34,9 @@
       flat
       dense
       no-wrap
-      color="primary"
+      color="black"
       no-caps
+      size="20px"
       label="Blog"
       class="q-ml-sm q-px-md"
       v-if="$q.screen.gt.sm"
@@ -48,7 +46,8 @@
       flat
       dense
       no-wrap
-      color="primary"
+      size="20px"
+      color="black"
       no-caps
       label="Contact"
       class="q-ml-sm q-px-md"
