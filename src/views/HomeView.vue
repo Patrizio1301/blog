@@ -107,11 +107,13 @@ import Idea from '../components/Idea.vue'
 }
 @media (max-width: 576px) {
   .overlay-text {
+    top: 44%;
     left: 30%;
     font-size: 25px;
     font-weight: 300;
   }
   .overlay-text2 {
+    top: 49%;
     left: 30%;
     font-size: 25px;
     font-weight: 300;

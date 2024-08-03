@@ -50,7 +50,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
 @media (max-width: 1700px) {
   .container {
-    padding: 10vh 20px; /* Remove top padding */
+    padding: 20vh 20px; /* Remove top padding */
     height: 80vh;
   }
   .content {
@@ -89,7 +89,7 @@ import SupportIcon from './icons/IconSupport.vue'
 }
 @media (max-width: 576px) {
   .container {
-    padding: 10vh 20px; /* Remove top padding */
+    padding: 1vh 20px; /* Remove top padding */
     height: 80vh;
   }
     .content {

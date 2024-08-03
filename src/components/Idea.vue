@@ -33,7 +33,37 @@ import SupportIcon from './icons/IconSupport.vue'
 }
 
 .header {
+  margin-top: 35vh;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (max-width: 1200px) {
+.header {
   margin-top: 30vh;
   font-family: "Bebas Neue", sans-serif;
 }
+}
+
+@media (max-width: 992px) {
+.header {
+  margin-top: 30vh;
+  font-family: "Bebas Neue", sans-serif;
+}
+}
+
+@media (max-width: 768px) {
+.header {
+  margin-top: 25vh;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+}
+}
+@media (max-width: 576px) {
+.header {
+  margin-top: 20vh;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+}
+}
+
 </style>
