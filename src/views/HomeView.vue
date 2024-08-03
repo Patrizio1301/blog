@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import AboutMe from '../components/AboutMe.vue'
+import Skills from '../components/Skills.vue'
+import Idea from '../components/Idea.vue'
 </script>
 
 <template>
@@ -13,7 +15,14 @@ import TheWelcome from '../components/TheWelcome.vue'
       </div>
     </q-img>
     <main>
-      <TheWelcome />
+      <q-intersection
+          transition="scale"
+          class="example-item"
+        >
+      <AboutMe />
+      <Skills />
+      <Idea />
+      </q-intersection>
     </main>
   </div>
 </template>
@@ -26,7 +35,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 .image {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 0px);
 }
 
 .overlay-text {
@@ -67,43 +76,48 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 @media (max-width: 992px) {
   .overlay-text {
+    left: 20%;
     font-size: 50px;
     font-weight: 300;
   }
   .overlay-text2 {
+    left: 20%;
     font-size: 30px;
     font-weight: 300;
   }
   .image {
-    height: 50vh;
+    height: calc(100vh - 0px);
   }
 }
 
 @media (max-width: 768px) {
   .overlay-text {
+    left: 30%;
     font-size: 40px;
     font-weight: 300;
   }
   .overlay-text2 {
+    left: 30%;
     font-size: 25px;
     font-weight: 300;
   }
   .image {
-    height: 50vh;
+    height: calc(100vh - 0px);
   }
 }
-
 @media (max-width: 576px) {
   .overlay-text {
+    left: 30%;
     font-size: 25px;
     font-weight: 300;
   }
   .overlay-text2 {
+    left: 30%;
     font-size: 25px;
     font-weight: 300;
   }
   .image {
-    height: 50vh;
+    height: calc(100vh - 0px);
   }
 }
 </style>

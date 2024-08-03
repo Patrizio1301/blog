@@ -24,14 +24,15 @@ const filledWidth = `${props.filledPercentage}%`;
   height: 10px; /* Height of the bar */
   background-color: white; /* Background color of the bar */
   position: relative;
-  border-radius: 15px; /* Make the corners rounded */
+  border-radius: 20px; /* Make the corners rounded */
   overflow: hidden; /* Ensures the fill stays within the rounded container */
 }
 
 .bar-filled {
   height: 100%;
-  background-color: black; /* Fill color */
+  background-color: blue; /* Fill color */
   position: absolute;
+  left: -2%;
   border-radius: 15px 0 0 15px; /* Rounded corners on the left side */
 }
 </style>
